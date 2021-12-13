@@ -28,7 +28,7 @@ body{
 	right: 0;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 0.8px solid #ccc;
 }
 
 #iphone12{
@@ -102,4 +102,72 @@ body{
 #item-price{
 	font-size: 1.3rem;
 	color: #333;
+}
+
+#line{
+	content: "";
+	background: #ccc;
+	width: 100%;
+	height: 0.8px;
+	margin: 30px 0;
+}
+
+.finish-container{
+	display: grid;
+	grid-template-columns: 195px 195px;
+	grid-gap: 10px;
+	margin-top: 15px;
+}
+
+.color-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	border: 0.8px solid #ccc;
+	border-radius: 12px;
+	font-size: 0.8rem;
+}
+
+.purple-circle{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #bf80ff;
+}
+
+.blue-circle{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #006699;
+}
+
+.green-circle{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #ccffe6;
+}
+
+.white-circle{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #f1f1f1;
+}
+
+.black-circle{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #313131;
+}
+
+.red-circle{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #ff3333;
 }
