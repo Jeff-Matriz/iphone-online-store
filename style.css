@@ -44,10 +44,18 @@ body{
 	grid-template-columns: 600px 600px;
 }
 
-/*phone images*/
+@media screen and (max-width: 600px){
+	.grid-container{
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto auto;
+	}
+}
+
+/*----phone images----*/
 .image-container{
 	margin: 5vh 0;
-	height: 600px;
+	height: 550px;
 	width: 400px;
 	text-align: center;
 	display: flex;
@@ -87,6 +95,10 @@ body{
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 10px;
+}
+
+.item-container:hover{
+	border: 1px solid #666;
 }
 
 #item-title{
@@ -170,4 +182,101 @@ body{
 	height: 30px;
 	border-radius: 50%;
 	background: #ff3333;
+}
+
+.color-container:hover{
+	border: 1px solid #666;
+}
+
+.capacity-container{
+	display: grid;
+	grid-template-columns: 195px 195px;
+	grid-gap: 10px;
+	margin-top: 15px;
+}
+
+.storage-size{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	border: 0.8px solid #ccc;
+	border-radius: 12px;
+}
+
+.storage-size:hover{
+	border: 1px solid #666;
+}
+
+#storage-capacity{
+	font-size: 2rem;
+}
+
+#storage-capacity:after{
+	content: "GB";
+	font-size: 1.3rem;
+}
+
+#storage-price{
+	font-size: 0.9rem;
+	color: #555;
+}
+
+.bag-container{
+	margin: 50px 0;
+	background: #fafafa;
+	padding: 30px;
+}
+
+.bag-price{
+	font-size: 2.2rem;
+	font-weight: 900;
+}
+
+.delivery-container{
+	display: flex;
+}
+
+.delivery-section{
+	display: flex;
+	flex-direction: column;
+	font-size: 1rem;
+	color: #111;
+	margin-left: 10px;
+}
+
+#cube{
+	font-size: 1.5rem;
+}
+
+#get-delivery{
+	color: #0088ff;
+}
+
+.bag-button{
+	background: #0088ff;
+	color: #fff;
+	width: 100%;
+	font-size: 1.3rem;
+	padding: 5px 0;
+	border: none;
+	border-radius: 5px;
+	margin: 30px 0;
+	cursor: pointer;
+}
+
+.bag-button:hover{
+	opacity: 0.95;
+}
+
+.still-deciding{
+	display: flex;
+	font-size: 1rem;
+}
+
+#bookmark{
+	color: #0088ff;
+	font-size: 2rem;
+	cursor: pointer;
 }
